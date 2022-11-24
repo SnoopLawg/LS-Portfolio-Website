@@ -40,6 +40,7 @@ li {
     display: flex;
     gap: 1em;
     font-size: 18px;
+    overflow: visible;
 }
 
 .menu li:hover {
@@ -64,6 +65,10 @@ input[type=checkbox] {
 
 /* My Name Is div*/
 .intro-div {
+    background-color: white;
+    padding-top: 20em;
+    padding-bottom: 20em;
+    padding-left: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,15 +81,24 @@ input[type=checkbox] {
 }
 
 .intro-text-left {
-    position: absolute;
-    top: 20em;
-    left: 5em;
-    color: #FFF;
+    padding: auto;
+    width: 100%;
+    color: black;
     font-size: x-large;
 }
 
 .intro-text-left h1 {
     padding-bottom: .5em;
+}
+
+/* ABOUT ME */
+.about-me {
+    width: 100%;
+    background-color: #888;
+}
+
+.about-me p {
+    color: black;
 }
 
 /* CONTACT FORM*/
@@ -109,7 +123,7 @@ body {
     font-size: 12px;
     line-height: 30px;
     color: #777;
-    background: #aaa;
+    background: #34495e;
 }
 
 .container {
@@ -241,6 +255,11 @@ fieldset {
 
 
 @media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        position: sticky;
+    }
+
     .menu {
         display: none;
         position: absolute;
@@ -281,40 +300,23 @@ fieldset {
     }
 }
 
+
+
 /* BODY */
 
 
-.about-me {
-    background-color: rgb(255, 255, 255);
-    margin: 0 auto;
-    text-align: center;
-    opacity: 0.8;
-    padding: 1em 0;
-}
+
 
 .projects {
     background-color: cornflowerblue;
     display: flex;
-    margin: 0 auto
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 5em;
+    justify-content: center;
 }
 
-.project1 {
-    background-color: rgb(82, 27, 83);
+.project1 .project2 .project3 {
+    width: 100%;
 
-    margin: 1em auto;
-    float: left;
-}
-
-.project2 {
-    background-color: rgb(154, 163, 71);
-
-    margin: 1em auto;
-    float: left;
-}
-
-.project3 {
-    background-color: rgb(28, 131, 114);
-
-    float: left;
-    margin: 1em auto;
 }
